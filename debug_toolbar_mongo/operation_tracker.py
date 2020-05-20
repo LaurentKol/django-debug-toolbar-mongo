@@ -239,7 +239,7 @@ def _tidy_stacktrace(stack):
     """
     django_path = os.path.realpath(os.path.dirname(django.__file__))
     django_path = os.path.normpath(os.path.join(django_path, '..'))
-    socketserver_path = os.path.realpath(os.path.dirname(SocketServer.__file__))
+    socketserver_path = os.path.realpath(os.path.dirname(socketserver.__file__))
     pymongo_path = os.path.realpath(os.path.dirname(pymongo.__file__))
 
     trace = []
